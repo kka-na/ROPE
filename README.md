@@ -220,5 +220,4 @@ Both `make_data.py` (field) and `make_data_carla.py` (CARLA) produce CSVs with a
 ## Citation
 
 > 김가나, "ROPE: 협력 자율주행과 단독 자율주행의 정보원 신뢰도, Target 관측 품질, 주행 성능 3축 평가 체계," 공학박사학위논문, 인하대학교 대학원, 2026.
-
-> G. Kim, "ROPE: A Three-Axis Evaluation Framework for Source Reliability, Target Observability, and Driving Performance in Cooperative and Standalone Automated Driving," Ph.D. Dissertation, Inha University, 2026.
+> K. Kim, "ROPE: A Three-Axis Evaluation Framework for Source Reliability, Target Observability, and Driving Performance in Cooperative and Standalone Automated Driving," Ph.D. Dissertation, Inha University, 2026.
