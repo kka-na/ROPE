@@ -1,0 +1,44 @@
+# V2V 채널 모델 파라미터 — 2×2 Factorial (C1/C3=baseline, C2/C4=degraded)
+#
+# prr_near   : PRR at d≈0
+# prr_far    : PRR at d→∞
+# d50        : PRR 50% 거리 (m)
+# k          : sigmoid 기울기
+# delay_clip : [min, max] ms
+
+profiles:
+  kiapi:
+    mu_delay:    60.0
+    sigma_delay:  2.8
+    delay_clip:  [10, 200]
+    prr_near:    0.930
+    prr_far:     0.700
+    d50:         120.0
+    k:           5.0
+
+  yeongjong:          # C1/C3 — baseline, field 실측 (196,266 samples)
+    mu_delay:    62.0
+    sigma_delay: 21.8
+    delay_clip:  [10, 200]
+    prr_near:    0.848
+    prr_far:     0.551
+    d50:         97.8
+    k:           5.0
+
+  degraded:           # C2/C4 — V2X 열화, 도심 NLoS/혼잡
+    mu_delay:    95.0
+    sigma_delay: 42.0
+    delay_clip:  [10, 400]
+    prr_near:    0.600
+    prr_far:     0.250
+    d50:         50.0
+    k:           5.0
+
+  ideal:
+    mu_delay:     5.0
+    sigma_delay:  0.5
+    delay_clip:  [1,   50]
+    prr_near:    1.000
+    prr_far:     1.000
+    d50:         200.0
+    k:           5.0
